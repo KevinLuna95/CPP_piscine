@@ -3,8 +3,8 @@
 
 # include "Contact.class.hpp"
 # include <string>
-#include <iomanip>
-#include <iostream>
+# include <iomanip>
+# include <iostream>
 /*
 Constructor:
 int _index, 
