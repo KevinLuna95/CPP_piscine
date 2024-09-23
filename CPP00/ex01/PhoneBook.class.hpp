@@ -76,7 +76,7 @@ class PhoneBook{
 
             if(this->i > 7)
             {
-                contact.add(i,first_name, last_name, nikname, telephone);
+                contact.add(i,first_name, last_name, nikname, telephone, dark_secret);
                 this->contacts[0] = this->contacts[1];
                 this->contacts[1] = this->contacts[2];
                 this->contacts[2] = this->contacts[3];
@@ -88,7 +88,7 @@ class PhoneBook{
             }
             else
             {
-                contact.add(this->i, first_name, last_name, nikname, telephone);
+                contact.add(this->i, first_name, last_name, nikname, telephone, dark_secret);
                 this->contacts[i] = contact;
                 this->i++;
             }

@@ -33,13 +33,15 @@ class Contact {
         std::string _first_name,
         std::string _last_name,
         std::string _nickname,
-        std::string _phone_number)
+        std::string _phone_number,
+        std::string _dark_secret)
     {
         set_index(_index);
         set_first_name(_first_name);
         set_last_name(_last_name);
         set_nickname(_nickname);
         set_phone_number(_phone_number);
+        set_dark_secret(_dark_secret);
         return;
     };
     int         get_index(void)
