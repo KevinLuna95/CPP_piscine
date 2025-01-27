@@ -75,17 +75,7 @@ class PhoneBook{
             }
 
             if(this->i > 7)
-            {
-                contact.add(i,first_name, last_name, nikname, telephone, dark_secret);
-                this->contacts[0] = this->contacts[1];
-                this->contacts[1] = this->contacts[2];
-                this->contacts[2] = this->contacts[3];
-                this->contacts[3] = this->contacts[4];
-                this->contacts[4] = this->contacts[5];
-                this->contacts[5] = this->contacts[6];
-                this->contacts[6] = this->contacts[7];
-                this->contacts[7] = contact;
-            }
+                this->contacts[i%8].add(i%8, first_name, last_name, nikname, telephone, dark_secret);
             else
             {
                 contact.add(this->i, first_name, last_name, nikname, telephone, dark_secret);
